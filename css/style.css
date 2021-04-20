@@ -5,3 +5,99 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    /* il font principale sarebbe da mettere con fontface, ma non lo vedono loro
+    quindi non introduco e lascio così */
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+}
+
+/* contenitore condiviso per centrare tutti i contenuti dei macroblocchi 
+e dare stesso ingombro (lo rendiamo già un minimo adaptive)
+e li introduce anche a strutture a griglie di BS*/
+.container-center {
+    width: 80%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* clearfix */
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn {
+    /* display: inline-block; */
+    border-radius: 40px;
+    font-size: 20px;
+    padding: 16px 32px;
+    background-color: #8ea1e1;
+}
+
+
+/* header */
+header {
+    height: 80px;
+    line-height: 80px; /* centratura verticale*/
+    background-color: rgba(49,97,224,255);
+}
+
+.logo{
+    float: left;
+}
+.logo a{
+    display: inline-block;
+}
+.logo svg {
+    color: #fff;
+    vertical-align: middle; /* centratura verticale*/
+}
+
+    /* main nav */
+#main-nav {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    width: calc(100% - 197px); /*finezza se abbiam visto il calc (100% meno gli altri 2 elementi)*/
+}
+    /* non abbiam necessariamente bisogno dei float */
+#main-nav li {
+    display: inline-block;
+}
+#main-nav li a {
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+#main-nav li a:hover {
+    text-decoration: underline;
+}
+
+#accedi {
+    float: right;
+}
+#accedi .btn {
+    font-size: 14px;
+    padding: 10px 14px;
+    background-color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+#accedi .btn:hover{
+    color: rgba(49,97,224,255);
+}
+
+/* jumbo */
+#jumbotron{
+    min-height: 546px;
+    background-image: url("../img/jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
