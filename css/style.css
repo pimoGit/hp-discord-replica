@@ -11,6 +11,7 @@ body{
     quindi non introduco e lascio così */
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 20px;
+    color: #23272a;
 }
 
 /* contenitore condiviso per centrare tutti i contenuti dei macroblocchi 
@@ -29,12 +30,28 @@ e li introduce anche a strutture a griglie di BS*/
     clear: both;
 }
 
+/* centralizziamo ciò che si può */
 .btn {
-    /* display: inline-block; */
+    display: inline-block;
     border-radius: 40px;
     font-size: 20px;
     padding: 16px 32px;
     background-color: #8ea1e1;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ipotizziamo di avere un tot di varianti simili nel sito quindi centralizziamo */
+.btn.white-black {
+    background-color: #fff;
+    color: #23272a;
+}
+.btn.black-white {
+    background-color: #23272a;
+    color: #fff;
+}
+.btn:hover{ /* semplifichiamo hover per tutti*/
+    color: rgba(49,97,224,255);
 }
 
 
@@ -90,9 +107,9 @@ header {
     background-color: #fff;
     font-size: 14px;
     text-decoration: none;
-    color: #000;
+    color: #23272a;
+    display: inline;
 }
-
 #accedi .btn:hover{
     color: rgba(49,97,224,255);
 }
@@ -104,3 +121,22 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+#jumbotron .container-center{
+    max-width: 780px; /* adattiamo una proprietà qui */
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+}
+
+#jumbotron .container-center h1{
+    font-size: 56px;
+    margin-bottom: 40px;
+}
+
+#jumbotron .container-center p{
+    margin-bottom: 25px;
+    line-height: 32px;
+}
+
+
+
