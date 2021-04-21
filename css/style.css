@@ -60,10 +60,13 @@ header {
 #main-nav {
     float: left;
     text-align: center;
-    list-style-type: none;
     width: calc(100% - 197px); /*finezza se abbiam visto il calc (100% meno gli altri 2 elementi)*/
 }
-    /* non abbiam necessariamente bisogno dei float */
+#main-nav ul {
+    list-style-type: none;
+    width: 100%; 
+}
+    /* non abbiam necessariamente bisogno dei float ovunque */
 #main-nav li {
     display: inline-block;
 }
