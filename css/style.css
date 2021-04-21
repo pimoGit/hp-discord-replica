@@ -146,5 +146,47 @@ header {
     margin-right: 24px;
 }
 
+/* main content */
+    /* anche qui centralizziamo il possibile visto che le 3 sez main sono uguali su molto */
+.main-section{
+    padding: 120px 0;
+}
+.main-section .colsx {
+    float: left;
+}
+.main-section .coldx { 
+    /* con il right possiamo evitarci il margine tra le col
+    guadaganndo un pò di adaptiveness 
+    (finezza ma possiamo sennò andare anche di left su entrambe e agiungere margin su .text)*/
+    float: right; 
+}
+.main-section .text {
+    width: 360px;
+    padding-top: 30px;
+    /* margin-left: 142px; */
+}
+.main-section .text h2{
+    font-size: 48px;
+    margin-bottom: 24px;
+}
 
+.main-section .text p{
+    line-height: 150%;
+}
+
+/* versione simile ma alternativa (blocchi rovesciati bgcolor e blocchi wave) */
+.main-section.alt-v{
+    padding: 120px 0;
+    background-color:#f6f6f6;
+}
+
+/* gestione wave svg 
+(può essere complessa, possiamo lasciare come bonus e poi facciamo giusto vedere in correzione) */
+.wave svg{
+    color: #f6f6f6;
+    display: block; /* toglie margine di sporcatura su svg */
+}
+.wave.down {
+    transform: rotate(180deg);
+}
 
