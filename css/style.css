@@ -53,6 +53,10 @@ e li introduce anche a strutture a griglie di BS*/
 .btn:hover{ /* semplifichiamo hover per tutti*/
     color: rgba(49,97,224,255);
 }
+/* icona */
+.btn .fas {
+    margin-right: 8px;
+}
 
 
 /* header */
@@ -136,6 +140,10 @@ header {
 #jumbotron .container-center p{
     margin-bottom: 25px;
     line-height: 32px;
+}
+
+#jumbotron .container-center .btn:first-of-type{
+    margin-right: 24px;
 }
 
 
