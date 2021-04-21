@@ -58,6 +58,16 @@ e li introduce anche a strutture a griglie di BS*/
     margin-right: 8px;
 }
 
+/* immaginiamolo come elemento di possibile ripetizione nel sito (quindi generalizziamo) */
+.title-stars {
+    background: url("../img/stars.svg") no-repeat;
+    background-size: contain;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+}
 
 /* header */
 header {
@@ -189,6 +199,7 @@ quindi ereditiamo le cose simili) */
 /* cambiamo solo le parti che ci interessano ereditando il resto */
 .main-section.alt-v-nocols .nocol{
     margin-bottom: 16px;
+    text-align: center;
 }
 .main-section.alt-v-nocols .text {
     width: auto;
@@ -196,6 +207,14 @@ quindi ereditiamo le cose simili) */
     padding-left: 90px;
     padding-right: 90px;
     /* margin-left: 0; */
+}
+.main-section.alt-v-nocols .nocol img{
+    width: 100%;
+}
+
+.main-section.alt-v-nocols .nocol h3{
+    width: 50%;
+    margin-bottom: 30px;
 }
 
 /* gestione wave svg 
