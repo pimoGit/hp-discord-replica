@@ -180,6 +180,24 @@ header {
     background-color:#f6f6f6;
 }
 
+/* versione diversa (senza colonne ma stesse regole di testo e wavetop,
+quindi ereditiamo le cose simili) */
+.main-section.alt-v-nocols{
+    padding: 120px 0;
+    background-color:#f6f6f6;
+}
+/* cambiamo solo le parti che ci interessano ereditando il resto */
+.main-section.alt-v-nocols .nocol{
+    margin-bottom: 16px;
+}
+.main-section.alt-v-nocols .text {
+    width: auto;
+    padding-top:0;
+    padding-left: 90px;
+    padding-right: 90px;
+    /* margin-left: 0; */
+}
+
 /* gestione wave svg 
 (può essere complessa, possiamo lasciare come bonus e poi facciamo giusto vedere in correzione) */
 .wave svg{
