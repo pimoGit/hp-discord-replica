@@ -1,4 +1,4 @@
-/* general rules */
+/* general rules ------------- */
 
 * {
     margin: 0;
@@ -88,7 +88,7 @@ e li richiama anche strutture a griglie di BS*/
     vertical-align: middle; /* centratura verticale*/
 }
 
-/* header */
+/* header  ------------- */
 header {
     height: 80px;
     line-height: 80px; /* centratura verticale*/
@@ -134,7 +134,7 @@ header {
     color: rgba(49,97,224,255);
 }
 
-/* jumbo */
+/* jumbo  ------------- */
 #jumbotron{
     min-height: 546px;
     background-image: url("../img/jumbo.png");
@@ -163,8 +163,9 @@ header {
     margin-right: 24px;
 }
 
-/* main content */
+/* main content  ------------- */
     /* anche qui centralizziamo il possibile visto che le 3 sez main sono uguali su molto */
+    /* sezione tipo */
 .main-section{
     padding: 120px 0;
 }
@@ -191,13 +192,13 @@ header {
     line-height: 150%;
 }
 
-/* versione simile ma alternativa (blocchi rovesciati, bgcolor e blocchi wave) */
+/* versione di sezione simile ma alternativa (blocchi rovesciati, bgcolor e blocchi wave) */
 .main-section.alt-v{
     background-color:#f6f6f6;
 }
 
-/* versione diversa (senza colonne ma stesse regole di testo e wavetop,
-quindi ereditiamo le cose simili) */
+/* versione di sezione diversa (senza colonne ma stesse regole di testo e wavetop,
+quindi anche qui ereditiamo le cose simili) */
 .main-section.alt-v-nocols{
     background-color:#f6f6f6;
 }
@@ -234,7 +235,7 @@ quindi ereditiamo le cose simili) */
 }
 
 
-/* footer */
+/* footer  ------------- */
 footer{
     background-color: #23272a;
     padding: 80px 0 60px 0;
