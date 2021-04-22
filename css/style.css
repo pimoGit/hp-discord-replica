@@ -7,12 +7,14 @@
 }
 
 body{
-    /* il font principale sarebbe da mettere con fontface, ma non lo vedono loro
+    /* il font principale sarebbe da mettere con @fontface, ma non lo vedono loro
     quindi non introduco e lascio così */
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 20px;
     color: #23272a;
 }
+
+/* comportamento base della maggior parte dei link */
 a {
     text-decoration: none;
 }
@@ -22,14 +24,14 @@ a:hover {
 
 /* contenitore condiviso per centrare tutti i contenuti dei macroblocchi 
 e dare stesso ingombro (rendiamo già un minimo adaptive)
-e li introduce anche a strutture a griglie di BS*/
+e li richiama anche strutture a griglie di BS*/
 .container-center {
     width: 90%;
     max-width: 1180px;
     margin: 0 auto;
 }
 
-/* clearfix */
+/* contenitore riga clearfix */
 .row::after{
     content: "";
     display: table;
@@ -40,7 +42,6 @@ e li introduce anche a strutture a griglie di BS*/
 .btn {
     display: inline-block;
     border-radius: 40px;
-    font-size: 20px;
     padding: 16px 32px;
     background-color: #8ea1e1;
     color: #fff;
@@ -65,7 +66,7 @@ e li introduce anche a strutture a griglie di BS*/
     margin-right: 8px;
 }
 
-/* immaginiamolo come elemento di possibile ripetizione nel sito (quindi generalizziamo) */
+/* immaginandolo come elemento di possibile ripetizione nel sito (lo generalizziamo) */
 .title-stars {
     background: url("../img/stars.svg") no-repeat;
     background-size: contain;
@@ -76,7 +77,7 @@ e li introduce anche a strutture a griglie di BS*/
     font-size: 30px;
 }
 
-/* parte del logo, centralizzato perchè hale stesse regola in header e footer */
+/* parte del logo, centralizzato perchè ha le stesse regole in header e footer */
 .logo{
     float: left;
 }
@@ -123,7 +124,6 @@ header {
     float: right;
 }
 #accedi .btn {
-    font-size: 14px;
     padding: 10px 14px;
     background-color: #fff;
     font-size: 14px;
@@ -142,7 +142,8 @@ header {
     background-size: cover;
 }
 #jumbotron .container-center{
-    max-width: 780px; /* adattiamo una proprietà qui */
+    /* adattiamo qualche proprietà qui */
+    max-width: 780px; 
     text-align: center;
     padding-top: 100px;
     color: #fff;
@@ -173,7 +174,7 @@ header {
 .main-section .coldx { 
     /* con il right possiamo evitarci il margine tra le col
     guadaganndo un pò di adaptiveness 
-    (finezza ma possiamo sennò andare anche di left su entrambe e agiungere margin su .text)*/
+    (finezza, ma possiamo sennò andare anche di left su entrambe e agiungere margin su .text)*/
     float: right; 
 }
 .main-section .text {
@@ -190,16 +191,14 @@ header {
     line-height: 150%;
 }
 
-/* versione simile ma alternativa (blocchi rovesciati bgcolor e blocchi wave) */
+/* versione simile ma alternativa (blocchi rovesciati, bgcolor e blocchi wave) */
 .main-section.alt-v{
-    padding: 120px 0;
     background-color:#f6f6f6;
 }
 
 /* versione diversa (senza colonne ma stesse regole di testo e wavetop,
 quindi ereditiamo le cose simili) */
 .main-section.alt-v-nocols{
-    padding: 120px 0;
     background-color:#f6f6f6;
 }
 /* cambiamo solo le parti che ci interessano ereditando il resto */
@@ -229,6 +228,7 @@ quindi ereditiamo le cose simili) */
     color: #f6f6f6;
     display: block; /* toglie margine di sporcatura su svg */
 }
+/* copia di wave.top ma ribaltata in verticale */
 .wave.down {
     transform: rotate(180deg);
 }
@@ -276,6 +276,10 @@ footer{
 #foot-up .menu-col h5 {
     font-size: 16px;
     color:#7289da;
+    padding-top: 8px;
+}
+#foot-up .menu-col ul{
+    list-style-type: none;
 }
 #foot-up .menu-col li {
     margin-top: 8px;
@@ -294,6 +298,7 @@ footer{
     height: 16px;
 }
 
+
     /* down */
 #foot-down{
  border-top: solid 1px #7289da;
@@ -304,7 +309,6 @@ footer{
     float: right;
 }
 #registrati .btn {
-    font-size: 14px;
     padding: 10px 14px;
     font-size: 14px;
     display: inline;
